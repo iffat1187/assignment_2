@@ -1,0 +1,239 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* shared style start here */
+/* css variables */
+:root {
+    --bg-main: #1a0b2e;
+    --bg-card: #2a0f4d;
+    --primary: #00ff88;
+    --text-muted: #d4bfef;
+}
+/* full site bg + font control all in one */
+.font-inter {
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg-main);
+    overflow-x: hidden;
+}
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* pseudo element */
+::selection {
+    background: rgba(230, 83, 60, 1);
+    color: #fff;
+}
+/* focus */
+:focus-visible {
+    outline: 2px solid rgba(230, 83, 60, 1);
+    outline-offset: 3px;
+}
+/* shared style  */
+.container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-inline: clamp(1rem, 4vw, 2rem);
+}
+html{
+    scroll-behavior: smooth;
+}
+/* P tag gray color */
+.gray-color {
+    color: var(--text-muted);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: clamp(1.25rem, 2vw, 1.5rem);
+}
+/* background color */
+.linear-bg {
+    background: linear-gradient(45deg,
+            #f3c94a 0%,
+            #ff6b8a 35%,
+            #c84dbb 60%,
+            #8e5ae3 80%,
+            #6b5cff 100%);
+}
+/* color text */
+.primary-color {
+    background: linear-gradient(45deg,
+            #f3c94a 0%,
+            #ff6b8a 35%,
+            #c84dbb 60%,
+            #8e5ae3 80%,
+            #6b5cff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* --common color */
+
+.section-heading {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    text-align: center;
+    line-height: clamp(2.5rem, 6vw, 3.625rem);
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+    background: linear-gradient(45deg,
+            white,
+            rgb(6, 230, 6),
+            #fff,
+            #00ff88,
+            #00ff88);
+    background-size: 200% 200%;
+    background-position: 0% center;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 4s linear infinite;
+}
+@keyframes my-animation {
+    0% {
+        background-color: #ff6b8a;
+    }
+
+    25% {
+        background-color: #e75bd9;
+    }
+
+    50% {
+        background-color: #9e69f3;
+
+    }
+
+    75% {
+        background-color: rgba(65, 246, 107, 0.811);
+
+    }
+
+    100% {
+        background-color: #6b5cff;
+
+    }
+}
+/* .subscribe-btn, */
+.primary-btn:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.729), rgba(180, 9, 222, 0.604), rgba(255, 255, 0, 0.698));
+    animation: my-animation 2s;
+}
+
+/* shared style end  */
+/* navbar starts */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* margin-bottom: clamp(3rem, 6vw, 4rem); */
+}
+.nav-container .nav-logo {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 800;
+    color: white;
+    -webkit-perspective: 700px; /* for older browser support */
+    perspective: 700px;
+    animation: round 6s infinite linear;
+}
+/* span child of nav logo */
+.nav-logo>span {
+    transform-origin: 0 78%;
+    transform-style:preserve-3d;
+    display: inline-block;
+}
+
+.linear {
+    background-image: linear-gradient(45.64deg,
+            #f3c94a 0%,
+            #ff6b8a 35%,
+            #c84dbb 60%,
+            #8e5ae3 80%,
+            #6b5cff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-size: 200% auto;
+    animation: snake 3s ease-in-out infinite;
+}
+@keyframes snake {
+    to {
+        background-position: 200% center;
+    }
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.nav-container .menu {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.menu .menu-list {
+    list-style: none;
+}
+.menu .menu-list {
+    list-style: none;
+}
+
+.menu .menu-link,
+.nav-btn {
+    text-decoration: none;
+    color: #e8e6ea;
+}
+/* NAV MENU LINK BASE */
+.menu a {
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    display: block;
+    transition: color 0.3s ease;
+}
+/* UNDERLINE (hidden by default) */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+            #f3c94a 0%,
+            #ff6b8a 35%,
+            #c84dbb 60%,
+            #8e5ae3 80%,
+            #6b5cff 100%);
+    transition: width 0.35s ease;
+}
+/* hover effect */
+.menu a:hover {
+    color: #ffffff;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* active menu  */
+.menu a.active::after {
+    width: 100%;
+}
+/* banner style starts here */
+.banner {
+    background-color: #1a0c30;
+    background: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: clamp(4rem, 8vw, 5rem);
+    padding-bottom: clamp(3rem, 6vw, 4rem);
+
+}
