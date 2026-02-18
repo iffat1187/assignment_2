@@ -1,0 +1,116 @@
+/* Laptop */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /* about section */
+    .about-container .about-count {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/* Mobile small */
+@media screen and (max-width: 575px) {
+
+    /* TOP BAR */
+    .nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        z-index: 150;
+        position: absolute;
+        background-color: #191245ae;
+    }
+
+    /* hamburger ONLY visible */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        order: 2;
+    }
+
+    .nav-container .menu,
+    .nav-container .primary-btn {
+        display: none !important;
+        width: 100%;
+    }
+
+    /* dropdown menu styles */
+    .nav-container .menu {
+        order: 3;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    /* CTA below menu */
+    .nav-container .primary-btn {
+        order: 4;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.25rem;
+        width: auto;
+        padding-inline: 1.4rem;
+        text-decoration: none;
+    }
+
+    #menu-toggle:checked~.menu {
+        display: flex !important;
+    }
+
+    #menu-toggle:checked~.primary-btn {
+        display: inline-flex !important;
+    }
+
+    .banner {
+        padding-top: calc(clamp(4rem, 8vw, 5rem) + 72px);
+    }
+
+    /* about section */
+    .about-container .about-count {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    /* choose section */
+    .choose-container .choose-box {
+        grid-template-areas:
+            " premium     premium       premium  "
+            " mobile      mobile        mobile"
+            " global      global        global"
+            " exclusive   exclusive     exclusive "
+            " rich        rich          rich";
+    }
+
+    /* feature section */
+    .feature-container .feature-box {
+        grid-template-areas:
+            " future      future   future"
+            " remote      remote    remote"
+            " career      career     career";
+
+    }
+
+    .host-content {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .host-media {
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    /* footer section here */
+    .footer-social {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container .copyright {
+        justify-content: center;
+    }
+}

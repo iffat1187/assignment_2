@@ -1,42 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- google font awesome cdn link -->
+    <!-- google font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- link to css -->
-        <link rel="stylesheet" href="./styles/style.css">
-        <!-- link to responsive css -->
-         <link rel="stylesheet" href="./styles/responsive.css">
-         <!-- ---icon  -->
+    <!-- link to css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- link to responsive css -->
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- ---icon  -->
     <link rel="shortcut icon" href="./assets/microphone.png" type="image/x-icon">
 
     <title>TechWave</title>
 </head>
+
 <body class="font-inter">
-    
+
     <nav class="nav-container container">
         <!-- logo -->
         <h1 class="nav-logo">Tech <span class="linear">Wave</span></h1>
         <ul class="menu">
-            <li class="menu-list"><a  class="menu-link" href="#">About</a></li>
-            <li class="menu-list"><a  class="menu-link" href="#">Episodes</a></li>
-            <li class="menu-list"><a  class="menu-link" href="#">Host</a></li>
+            <li class="menu-list"><a class="menu-link" href="#">About</a></li>
+            <li class="menu-list"><a class="menu-link" href="#">Episodes</a></li>
+            <li class="menu-list"><a class="menu-link" href="#">Host</a></li>
 
         </ul>
-         <a href="#" class="primary-btn nav-btn linear-bg">
+        <a href="#" class="primary-btn nav-btn linear-bg">
             Subscribe <i class="fa-solid fa-arrow-right"></i>
         </a>
 
-         <!-- Hamburger -->
+        <!-- Hamburger -->
         <label for="menu-toggle" class="menu-icon">
             <img src="./assets/hamburger-menu.png" alt="Menu">
         </label>
 
     </nav>
+    <!-- banner area start -->
+    <header>
+        <section class="banner">
+            <div class="banner-container  container  display-flex">
+                <div class="banner-img">
+                    <img class="banner-round-img" src="./assets/hero-circle.png" alt="">
+                    <img class="microphone" src="./assets/microphone.png" alt="">
+
+
+                    <div class="banner-badge">
+                        <p class="badge">NEW</p>
+
+                    </div>
+                </div>
+                <div class="banner-content">
+                    h2.banner
+                    <h2 class="banner-logo">
+                        TechWave
+                    </h2>
+                    <p class="banner-info  gray-color">Your daily dose of tech insights, productivity hacks, and
+                        personal growth
+                    </p>
+                    <div class="banner-btn">
+                        <button class="spotify-btn display-flex  primary-btn  linear-bg">
+                            <img src="./assets/spotify.png" alt="">Listen on Spotify
+                        </button>
+                        <button class="subscribe-btn  display-flex ">
+                            <img src="./assets/message.png" alt="">Subscribe
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </header>
+    <main>
+        <!-- about section start -->
+        <section class="about">
+            <div class="about-container container">
+                <div class="about-content">
+                    <h2 class="section-heading">About the Podcast</h2>
+                    <div class="about-info">
+                        <p class="info-1 gray-color">TechWave is your go-to podcast for staying ahead in the fast-paced
+                            world of technology.
+                        </p>
+                        <p class="info-2 gray-color">We break down complex topics into digestible insights, explore
+                            productivity strategies that actually work,
+
+                        </p>
+                        <p class="info-3 gray-color">Join thousands of young professionals and tech enthusiasts who
+                            start their day with TechWave.
+
+
+                        </p>
+                        <!-- for horizontal line hr -->
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="about-count">
+                    <div class="count-card">
+                        <h3 class="count">150K+</h3>
+                        <p class="count-details gray-color">Monthly Listeners</p>
+
+                    </div>
+                    <div class="count-card">
+                        <h3 class="count">200+</h3>
+                        <p class="count-details gray-color">Episodes Published</p>
+
+                    </div>
+                    <div class="count-card">
+                        <h3 class="count">4.9+</h3>
+                        <p class="count-details gray-color">Average Rating</p>
+
+                    </div>
+                    <div class="count-card">
+                        <h3 class="count">50+</h3>
+                        <p class="count-details gray-color">Industry Experts</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section end -->
+        <!--  choose area start -->
+        <section class="choose">
+            <div class="choose-container container">
+                <h2 class="section-heading">Why Choose TechWave</h2>
+
+
+                <div class="choose-box">
+                    <div class="premium-box box">
+                        <img src="./assets/headphone.png" alt="">
+                        <h3>Premium Audio Quality</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio
+                            engineering. Every episode is mastered for optimal listening across all devices and
+                            platforms.</p>
+                    </div>
+
+                    <div class="mobile-box box">
+                        <img src="./assets/device.png" alt="">
+                        <h3>Mobile Friendly</h3>
+                        <p>Listen on the go with seamless mobile experience and offline downloads.</p>
+                    </div>
+
+                    <div class="global-box box">
+                        <img src="./assets/location.png" alt="">
+                        <h3>Global Community</h3>
+                        <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                    </div>
+
+                    <div class="exclusive-box box">
+                        <img src="./assets/message.png" alt="">
+                        <h3>Exclusive Interviews</h3>
+                        <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host
+                            secures exclusive conversations you won't find anywhere else, diving deep into their
+                            journeys,
+                            failures, and success strategies.</p>
+                    </div>
+                    <div class=" rich-box box">
+                        <img src="./assets/resource.png" alt="">
+                        <h3>Rich Resources</h3>
+                        <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
+                    </div>
+                </div>
+             </div>
+
+        </section>
+
+        
+
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
+
 </html>
