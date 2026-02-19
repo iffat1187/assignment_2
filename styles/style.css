@@ -512,7 +512,7 @@ html{
 
 /* hover */
 .box:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
 }
 
 /*feature style here */
@@ -540,6 +540,10 @@ html{
     position: relative;
     width: 100%;
     z-index: 5;
+}
+.card:hover{
+     transform: translateY(-10px);
+
 }
 
 .video>iframe {
