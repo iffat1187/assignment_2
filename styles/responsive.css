@@ -84,11 +84,13 @@
     }
 
     /* feature section */
-    .feature-container .feature-box {
-        grid-template-areas:
-            " future      future   future"
-            " remote      remote    remote"
-            " career      career     career";
+     .feature-box {
+       width: 400px ;
+       flex-direction: column;
+     
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin: 0 auto;
 
     }
 
