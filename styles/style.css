@@ -270,7 +270,7 @@ html{
     text-align: center;
 }
 /* ----banner animation */
-@keyframes iffat {
+/* @keyframes iffat {
 
     0%,
     100% {
@@ -289,12 +289,13 @@ html{
         border-radius: 50% 50% 30% 50%;
         ;
     }
-}
+} */
 
 .banner-round-img:hover {
+     transform: translateY(-15px);
     border: 5px solid white;
     border-radius: 50%;
-    animation: iffat 2s infinite alternate;
+    /* animation: iffat 2s infinite alternate; */
 }
 
 /* banner animation :end */
@@ -305,10 +306,13 @@ html{
     height: auto;
     position: absolute;
     z-index: 2;
-    animation: jahan 1.5s infinite;
+    /* animation: jahan 1.5s infinite; */
+}
+.microphone:hover{
+     transform: translateY(-15px);
 }
 
-@keyframes jahan {
+/* @keyframes jahan {
     0% {
         transform: scale(1, 1);
     }
@@ -321,7 +325,7 @@ html{
         transform: scale(1.2);
         opacity: 0;
     }
-}
+} */
 
 .banner-badge {
     background-color: #00ff88;
